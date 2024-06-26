@@ -19,7 +19,7 @@
 // const d = "dwa";
 // console.log(typeof Number(d));
 
-// console.log(Number.parseInt("15px24")); //10
+// console.log(Number.parseInt("15px24")); //15
 // console.log(Number.parseInt('10.5px')); //10
 // console.log(Number.parseInt("15px24")); //15
 // console.log(Number.parseInt("px")); //NaN
