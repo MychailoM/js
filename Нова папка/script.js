@@ -1,29 +1,21 @@
-// const btn = document.querySelector('.btn');
+const inputElement = document.querySelector(".time__calculator_input");
+const buttonElement = document.querySelector(".time__calculator_btn");
+const resultElement = document.querySelector(".time__calculator_text");
 
-// const area = function (w, h) {
-//     if (h === '' || w === '') {
-//         return alert(w * w || h * h);
-//     } else if (h != '' && w != '') {
-//         return alert(w * h);
-//     }
-// };
+// Додаємо обробник події для кнопки
+buttonElement.addEventListener("click", () => {
+const inputValue = inputElement.value; 
 
-// btn.addEventListener("click", () => {
-//     area(document.querySelector('.width').value , document.querySelector(".height").value);
-// });
+if (!inputValue || isNaN(inputValue) || inputValue < 0) {
+    resultElement.textContent = "Будь ласка, введіть коректне число!";
+    return;
+}
 
+const totalMinutes = parseInt(inputValue, 10);
 
+    const days = Math.floor(totalMinutes / (24 * 60));
+    const hours = Math.floor((totalMinutes % (24 * 60)) / 60);
+    const minutes = totalMinutes % 60;
 
-const button = document.querySelector(".btn");
-
-const totalPrice = function (price, discount) {
-    
-    return alert(price - price * (discount / 100));
-};
-
-button.addEventListener("click", () => {
-    totalPrice(
-    document.querySelector(".price").value,
-    document.querySelector(".discount").value
-    );
+resultElement.textContent = `${days} дн. ${hours}:${minutes}`;
 });

@@ -1,4 +1,3 @@
-
 const users = [  
 {
     id: '701b29c3-b35d-4cf1-a5f6-8b12b29a5081',    
@@ -88,6 +87,13 @@ const users = [
 const sum = users.reduce((totalBalance, value) => totalBalance + value.balance, 0);
 console.log(sum);
 
+
+
+const getUsersWithFriend = (users, friendName) => {
+    const a = users.filter(user => user.friends.includes(friendName)).map(user => user.name);
+    return a
+};
+  console.log(getUsersWithFriend(users, 'Briana Decker')); // [ 'Sharlene Bush', 'Sheree Anthony' ]
 
 
 

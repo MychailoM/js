@@ -1,0 +1,41 @@
+.time__calculator{
+    
+}
+
+.time__calculator_title{
+
+}
+
+.time__calculator_input{
+    position: relative;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    padding: 10px;
+    border: none;
+    background-color: #D7D7D7;
+}
+
+.time__calculator_btn{
+    position: absolute;
+    padding: 10px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border: none;
+    background-color: #000000;
+    color: #fff;
+    
+}
+
+.time__calculator_line{
+    margin-left: 66px;
+    margin-right: 33px;
+}
+
+.time__calculator_text{
+
+}
+
+.time__calculator_menu{
+    display: flex;
+    align-items: center;
+}
